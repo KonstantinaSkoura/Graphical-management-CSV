@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="server.DatasetManager" project="2018-19_CSV-Viewer-ClientOnly" 
+    file="/2018-19_CSV-Viewer-ClientOnly/src/server/DatasetManager.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="304" width="409" x="131" y="-21"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="2" language="java" name="server.IDatasetManager" project="2018-19_CSV-Viewer-ClientOnly" 
+    file="/2018-19_CSV-Viewer-ClientOnly/src/server/IDatasetManager.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="142" width="409" x="422" y="323"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="3" language="java" name="server.DatasetManagerFactory" project="2018-19_CSV-Viewer-ClientOnly" 
+    file="/2018-19_CSV-Viewer-ClientOnly/src/server/DatasetManagerFactory.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="206" x="561" y="-167"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="server.AllData" project="2018-19_CSV-Viewer-ClientOnly" 
+    file="/2018-19_CSV-Viewer-ClientOnly/src/server/AllData.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="358" width="251" x="131" y="323"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="5">    
+    <bendpoint x="570" y="-21"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="6">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <realization id="7">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <association id="8">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="9" name="AllDataset"/>      
+      <multiplicity id="10" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
